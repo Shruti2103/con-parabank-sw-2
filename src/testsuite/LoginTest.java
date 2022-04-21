@@ -69,7 +69,7 @@ public class LoginTest extends BaseTest {
         username.sendKeys("primeDevani");
         // Valid password enter
         WebElement password = driver.findElement(By.xpath("//input[@name='password']"));
-        password.sendKeys("Devani");
+        password.sendKeys("prime123");
         // click omn login button
         WebElement loginbtn = driver.findElement(By.xpath("//input[@value='Log In']"));
         loginbtn.click();
@@ -78,12 +78,11 @@ public class LoginTest extends BaseTest {
        logout.click();
         // varify text customer login
        String expectedmsg = "Customer Login";
-        WebElement actualmsg = driver.findElement(By.xpath("//h2[contains(text(),'Customer Login')]"));
+        WebElement actualmsg = driver.findElement(By.xpath("//h2[text()='Customer Login']"));
        String actualmsg1 = actualmsg.getText();
         //Asscert result
         Assert.assertEquals("Customer Login", expectedmsg, actualmsg1);
-      // Please note the logout button is not working, I used many time. Use xpath and cropath too.
-        //might have website issue because I kept trying it but while running it stick to login button and it fails.
+     
 
     }
 

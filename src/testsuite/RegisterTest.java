@@ -43,7 +43,7 @@ public class RegisterTest extends BaseTest {
         registerlink.click();
         //Enter first name
         WebElement firstName = driver.findElement(By.xpath("//input[@id='customer.firstName']"));
-        firstName.sendKeys("Prime2");
+        firstName.sendKeys("Prime3");
         //Enter last Name
         WebElement lastName = driver.findElement(By.xpath("//input[@id='customer.lastName']"));
         lastName.sendKeys("Devani");
