@@ -82,7 +82,7 @@ public class LoginTest extends BaseTest {
        String actualmsg1 = actualmsg.getText();
         //Asscert result
         Assert.assertEquals("Customer Login", expectedmsg, actualmsg1);
-     
+
 
     }
 
